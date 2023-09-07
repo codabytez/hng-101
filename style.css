@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+header img {
+  width: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+main p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+main a {
+  color: #888;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
