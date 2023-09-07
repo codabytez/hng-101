@@ -15,10 +15,17 @@ const updateDateTime = () => {
   ];
   const now = new Date();
   const dayOfWeek = daysOfWeek[now.getUTCDay()];
-  const utcTime = now.toISOString().split("T")[1].split(".")[0];
+  const options = {
+    timeZone: "Africa/Lagos",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+    hour12: false,
+  };
+  const localTime = now.toLocaleTimeString([], options);
 
   currentDay.textContent = `Current Day: ${dayOfWeek}`;
-  currentUTC.textContent = `Current UTC Time: ${utcTime}`;
+  currentUTC.textContent = `Current UTC Time: ${localTime}`;
 
   setTimeout(updateDateTime, 1000);
 };
