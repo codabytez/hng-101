@@ -18,8 +18,8 @@ const updateDateTime = () => {
 
   const localTime = now.getTime();
 
-  currentDay.textContent = `Current Day: ${dayOfWeek}`;
-  currentUTC.textContent = `Current UTC Time: ${localTime}`;
+  currentDay.textContent = dayOfWeek;
+  currentUTC.textContent = localTime;
 
   setTimeout(updateDateTime, 1000);
 };
