@@ -1,10 +1,13 @@
-body {
+main {
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #333;
   color: #fff;
   margin: 0;
   padding: 0;
+  width: max-content;
+  margin: auto;
+  border-radius: 20px;
 }
 
 header {
@@ -22,24 +25,24 @@ header img {
   border-radius: 50%;
 }
 
-main {
+section {
   padding: 20px;
   margin: 0 auto;
   max-width: 800px;
 }
 
-main p {
+section p {
   font-size: 18px;
   margin-top: 20px;
 }
 
-main a {
+section a {
   color: #888;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
 
-main a:hover {
+section a:hover {
   text-decoration: underline;
   color: #ccc;
 }
